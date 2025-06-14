@@ -1,0 +1,39 @@
+body {
+    background-color: #f8f9fa;
+}
+
+#task-list .list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#task-list .task-icon {
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 1.5rem;
+    text-align: center;
+}
+
+#task-list .task-text {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+#task-list .task-text.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+#task-list .btn-delete {
+    border: none;
+    background: transparent;
+    color: #dc3545;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+#task-list .btn-delete:hover {
+    color: #a71d2a;
+}
